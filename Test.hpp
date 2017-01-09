@@ -104,7 +104,7 @@ public:
 
 	AbstractTest() :
 			countCalls(0),
-			testName("Null test")
+			testName("NONAME TEST")
 	{
 	}
 	AbstractTest(std::string const &name) :
@@ -117,9 +117,9 @@ public:
 			testName(name)
 	{
 	}
-	AbstractTest(char const *nameStr) :
+	AbstractTest(char const *name) :
 			countCalls(0),
-			testName(nameStr)
+			testName(name)
 	{
 	}
 
@@ -203,7 +203,7 @@ public:
 	TestAggregator(const TestAggregator &) = delete;
 	TestAggregator(TestAggregator &&) = delete;
 
-	TestAggregator() : aggregatorName("NONAME")
+	TestAggregator() : aggregatorName("NONAME TEST AGGREGATOR")
 	{
 	}
 
@@ -281,13 +281,13 @@ protected:
 		return aggregatorName;
 	}
 
-	void setName(const std::string &new_name)
+	void setName(const std::string &name)
 	{
-		aggregatorName = new_name;
+		aggregatorName = name;
 	}
-	void setName(std::string &&new_name)
+	void setName(std::string &&name)
 	{
-		aggregatorName = new_name;
+		aggregatorName = name;
 	}
 
 private:
