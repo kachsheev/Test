@@ -1,5 +1,5 @@
-#ifndef TEST_BASETEST_H
-#define TEST_BASETEST_H
+#ifndef TEST_H
+#define TEST_H
 
 #include <stdint>
 #include <string>
@@ -295,4 +295,4 @@ private:
 	std::vector<AbstractTest *> vtests;
 };
 
-#endif // TEST_BASETEST_H
+#endif // TEST_H
