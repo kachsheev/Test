@@ -1,7 +1,7 @@
 #ifndef TEST_H
 #define TEST_H
 
-#include <stdint>
+#include <stdint.h>
 #include <string>
 #include <vector>
 #include <iostream>
@@ -163,7 +163,7 @@ private:
 	{
 		std::cout << "> ";
 		setConsoleText(TEXT_CYAN, TEXT_BACKGROUND_BLACK);
-		std::cout << "Start" " " << testName << '\n';
+		std::cout << "Start" " " << testName << "\n";
 		setConsoleText(TEXT_WHITE, TEXT_BACKGROUND_BLACK);
 	}
 
@@ -260,7 +260,7 @@ protected:
 		setConsoleText(TEXT_YELLOW, TEXT_BACKGROUND_BLACK);
 		std::cout << aggregatorName;
 		setConsoleText(TEXT_WHITE, TEXT_BACKGROUND_BLACK);
-		std::cout << " --------------------" "\n";
+		std::cout << " --------------------" "\n\n";
 	}
 
 	void printEnd()
@@ -269,7 +269,7 @@ protected:
 		setConsoleText(TEXT_YELLOW, TEXT_BACKGROUND_BLACK);
 		std::cout << "END";
 		setConsoleText(TEXT_WHITE, TEXT_BACKGROUND_BLACK);
-		std::cout << " --------------------" "\n\n";
+		std::cout << " --------------------" "\n";
 	}
 
 	std::string getName() const
